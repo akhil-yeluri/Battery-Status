@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="akhilyeluri.batterystatus.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/battery_percentage"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/percentage"
+        android:layout_below="@+id/battery_percentage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/percentage"
+        android:id="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
